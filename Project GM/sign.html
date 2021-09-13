@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:700,400|Roboto+Mono:400,300" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Quick, Draw your signature!</title>
+
+</head>
+
+<body onselectstart="return false">
+
+    <div id="header" class="header-shadow">
+        <h1 class="logo" id="header-title">Quick, Draw your signature!</h1>
+    </div>
+
+    <div id="content">
+        <div id="frontpage">
+            <div id="scroller">
+                <div id="intro">
+                    <div id="signature-pad" class="signature-pad">
+                        <div class="signature-pad--body">
+                            <canvas >
+                            </canvas>
+                        </div>
+                        <div class="signature-pad--footer">
+                            <div class="description">Sign above</div>
+
+                            <div class="signature-pad--actions">
+                                <div>
+                                    <button type="button" id="clear-canvas" class="button-options" data-action="clear"> Clear </button>
+                                    <button type="button" class="button-options" data-action="change-color"> Change color </button>
+                                    <button type="button" class="button-options" data-action="undo"> Undo </button>
+                                </div>
+                                <div>
+                                    <button type="button" class="button-options" data-action="save-png"> Save </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bezier.js"></script>
+    <script src="sign.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
